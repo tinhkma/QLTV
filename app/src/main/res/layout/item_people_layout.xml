@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:id="@+id/ln_item"
+    android:weightSum="4"
+    android:background="@color/colorPrimary"
+    android:layout_width="match_parent"
+    android:layout_marginTop="@dimen/dp4"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/tv_id"
+        android:gravity="start"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dp15"
+        android:textStyle="normal" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:gravity="start"
+        android:maxLines="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dp15"
+        android:textStyle="normal" />
+
+    <TextView
+        android:id="@+id/tv_phone"
+        android:gravity="start"
+        android:maxLines="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dp15"
+        android:textStyle="normal" />
+
+    <TextView
+        android:id="@+id/tv_violate"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dp15"
+        android:textStyle="normal" />
+
+</LinearLayout>

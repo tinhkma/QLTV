@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/colorPrimary"
+    android:layout_height="match_parent"
+    tools:context=".ui.AddDeleteBookActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="@string/app_name"
+        app:titleTextColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Add Book"
+        android:textColor="@color/red_title"
+        android:textSize="@dimen/dp17"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <View
+        android:id="@+id/views1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp1"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:background="@android:color/holo_orange_light"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <LinearLayout
+        android:weightSum="4"
+        android:id="@+id/ln0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="8dp"
+        android:gravity="start"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/views1">
+
+        <TextView
+            android:layout_weight="3"
+            android:gravity="start|center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="- ID:"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dp15" />
+
+        <EditText
+            android:id="@+id/tx_id"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginRight="@dimen/dp16"
+            android:background="@color/colorPrimary"
+            android:ems="10"
+            android:hint="id"
+            android:inputType="textPersonName"
+            android:textColor="@color/white"
+            android:textColorHint="@android:color/darker_gray"
+            android:textSize="@dimen/dp15" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:weightSum="4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="8dp"
+        android:gravity="start"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/ln1"
+        app:layout_constraintTop_toBottomOf="@+id/ln0">
+
+        <TextView
+            android:layout_weight="3"
+            android:gravity="start|center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="- Name:"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dp15" />
+
+        <EditText
+            android:id="@+id/tx_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginRight="@dimen/dp16"
+            android:background="@color/colorPrimary"
+            android:ems="10"
+            android:hint="name"
+            android:inputType="textPersonName"
+            android:textColor="@color/white"
+            android:textColorHint="@android:color/darker_gray"
+            android:textSize="@dimen/dp15" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_weight="4"
+        android:id="@+id/ln2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="8dp"
+        android:gravity="start"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ln1">
+
+        <TextView
+            android:layout_weight="3"
+            android:gravity="start|center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="- Author: "
+            android:textColor="@color/white"
+            android:textSize="@dimen/dp15" />
+
+        <EditText
+            android:id="@+id/tx_author"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:ems="10"
+            android:layout_marginRight="@dimen/dp16"
+            android:hint="author"
+            android:inputType="textPersonName"
+            android:textColor="@color/white"
+            android:textColorHint="@android:color/darker_gray"
+            android:textSize="@dimen/dp15" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_weight="4"
+        android:id="@+id/ln3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="8dp"
+        android:gravity="start"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ln2">
+
+        <TextView
+            android:layout_weight="3"
+            android:gravity="start|center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="- Amount:"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dp15" />
+
+        <EditText
+            android:id="@+id/tx_amount"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:ems="10"
+            android:layout_marginRight="@dimen/dp16"
+            android:hint="amount"
+            android:inputType="textPersonName"
+            android:textColor="@color/white"
+            android:textColorHint="@android:color/darker_gray"
+            android:textSize="@dimen/dp15" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_weight="4"
+        android:id="@+id/ln10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="8dp"
+        android:gravity="start"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ln3">
+
+        <TextView
+            android:layout_weight="3"
+            android:gravity="start|center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="- Cur Amount:"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dp15" />
+
+        <EditText
+            android:id="@+id/tx_current_amount"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:ems="10"
+            android:layout_marginRight="@dimen/dp16"
+            android:hint="current amount"
+            android:inputType="textPersonName"
+            android:textColor="@color/white"
+            android:textColorHint="@android:color/darker_gray"
+            android:textSize="@dimen/dp15" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="4"
+        android:id="@+id/ln4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="8dp"
+        android:gravity="start"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ln10">
+
+        <TextView
+            android:layout_weight="3"
+            android:gravity="start|center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="- Status:"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dp15" />
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_gravity="start"
+            android:gravity="start"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <Switch
+                android:id="@+id/sw_status"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="4"
+        android:id="@+id/ln5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="8dp"
+        android:gravity="start"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ln4">
+
+        <TextView
+            android:layout_weight="3"
+            android:gravity="start|center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="- Cover:"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dp15" />
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_gravity="start"
+            android:gravity="start"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="@dimen/dp80"
+                android:layout_height="@dimen/dp40"
+                android:layout_gravity="start|center"
+                android:layout_margin="3dp"
+                android:padding="@dimen/dp3"
+                app:cardBackgroundColor="@android:color/holo_green_light"
+                app:cardCornerRadius="@dimen/dp4">
+
+                <Button
+                    android:id="@+id/bn_choose_cover"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Choose..."
+                    android:background="@android:color/holo_green_light"
+                    android:textColor="@color/black"
+                    android:textIsSelectable="true"
+                    android:textSize="@dimen/dp15" />
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_weight="4"
+        android:id="@+id/ln6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="8dp"
+        android:gravity="start"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ln5">
+
+        <TextView
+            android:layout_weight="3"
+            android:gravity="start|center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="- Thumball:"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dp15" />
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_gravity="start"
+            android:gravity="start"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="@dimen/dp80"
+                android:layout_height="@dimen/dp40"
+                android:layout_gravity="start|center"
+                android:layout_margin="3dp"
+                android:padding="@dimen/dp3"
+                app:cardBackgroundColor="@android:color/holo_green_light"
+                app:cardCornerRadius="@dimen/dp4">
+
+                <Button
+                    android:id="@+id/bn_choose_thumball"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Choose..."
+                    android:background="@android:color/holo_green_light"
+                    android:textColor="@color/black"
+                    android:textIsSelectable="true"
+                    android:textSize="@dimen/dp15" />
+
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_weight="4"
+        android:id="@+id/ln7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="8dp"
+        android:gravity="start"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ln6">
+
+        <TextView
+            android:layout_weight="3"
+            android:gravity="start|center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="- Description:"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dp15" />
+
+        <EditText
+            android:id="@+id/tx_des"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:ems="10"
+            android:hint="description"
+            android:layout_marginRight="@dimen/dp16"
+            android:inputType="textPersonName"
+            android:textColor="@color/white"
+            android:textColorHint="@android:color/darker_gray"
+            android:textSize="@dimen/dp15" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dp16"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:gravity="start|center"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ln7">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="@dimen/dp60"
+            android:layout_height="@dimen/dp35"
+            android:layout_gravity="center"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:padding="@dimen/dp3"
+            app:cardBackgroundColor="@android:color/holo_green_light"
+            app:cardCornerRadius="@dimen/dp4">
+
+            <Button
+                android:id="@+id/bt_canlce"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/holo_green_light"
+                android:clickable="true"
+                android:text="Canlce"
+                android:textAllCaps="false"
+                android:textSize="@dimen/dp13" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="@dimen/dp60"
+            android:layout_height="@dimen/dp35"
+            android:layout_gravity="center"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:padding="@dimen/dp3"
+            app:cardBackgroundColor="@android:color/holo_green_light"
+            app:cardCornerRadius="@dimen/dp4">
+
+            <Button
+                android:id="@+id/bt_add"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/holo_green_light"
+                android:clickable="true"
+                android:text="Add to Libraly"
+                android:textAllCaps="false"
+                android:textSize="@dimen/dp13" />
+
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

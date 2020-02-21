@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:title="Manager Book"
+        android:id="@+id/mn_gr_book">
+        <menu>
+            <group android:id="@+id/ql_book">
+                <item
+                    android:id="@+id/mn_book"
+                    android:title="Manager Book"
+                    android:icon="@drawable/ic_manager_book"/>
+
+                <item
+                    android:id="@+id/mn_add_delete_book"
+                    android:title="Add/Delete Book"
+                    android:icon="@drawable/ic_add"/>
+
+                <item
+                    android:id="@+id/mn_statistical_book"
+                    android:title="Statistical Book"
+                    android:icon="@drawable/ic_statistical"/>
+            </group>
+        </menu>
+    </item>
+
+    <item
+        android:title="Manager Reader"
+        android:id="@+id/mn_gr_reader">
+        <menu>
+            <group android:id="@+id/ql_readers">
+                <item
+                    android:id="@+id/mn_ql_user"
+                    android:title="User Manager"
+                    android:icon="@drawable/ic_mn_user"/>
+
+                <item
+                    android:id="@+id/mn_adđ_delete_user"
+                    android:title="Add/Delete User"
+                    android:icon="@drawable/ic_add"/>
+
+                <item
+                    android:id="@+id/mn_statistical_user"
+                    android:title="Statistical User"
+                    android:icon="@drawable/ic_statistical"/>
+            </group>
+        </menu>
+    </item>
+
+    <item
+        android:title="Manager Lease"
+        android:id="@+id/mn_gr_lease">
+        <menu>
+            <group android:id="@+id/ql_lease">
+                <item
+                    android:id="@+id/mn_ql_lease"
+                    android:title="User Manager"
+                    android:icon="@drawable/ic_mn_user"/>
+
+                <item
+                    android:id="@+id/mn_expiry_date"
+                    android:title="Manager Expiry Date"
+                    android:icon="@drawable/ic_statistical"/>
+            </group>
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/mn_report"
+        android:title="Report Libraly"
+        android:icon="@drawable/ic_report"/>
+
+    <item
+        android:id="@+id/mn_logout"
+        android:title="Logout"
+        android:icon="@drawable/ic_arrow"/>
+
+</menu>

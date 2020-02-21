@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Manager Library</string>
+
+    <string name="infor">"Make by Trương Xuân Tính\nClass: AT14A\nSchool: Học viện kỹ thuật mật mã\nAPI by KIT (thuộc học viện kỹ thuật mật mã)"</string>
+
+    <string name="Open">open</string>
+    <string name="Close">close</string>
+
+    <string name="book">"How to Win Friends and Influence People - Đắc nhân tâm được viết vào những năm 1930, nhưng hầu hết các lời khuyên của Carnegie vẫn đúng với ngày hôm nay. Cuốn sách phát triển bản thân này cũng nằm trong nhiều Top sách gây ảnh hưởng và làm thay đổi cuộc sống của nhiều tờ báo, trang web uy tín. Cuốn sách thậm chí cũng nằm trong nhiều Top sách quản trị kinh doanh hay nhất mọi thời đại. How to Win Friends and Influence People - Đắc nhân tâm cũng đã được dịch và xuất bản tại Việt Nam."</string>
+</resources>

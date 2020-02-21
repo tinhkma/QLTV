@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorPrimary"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        app:titleTextColor="@color/white"
+        app:title="Đắc nhân tâm"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        app:layout_collapseMode="pin"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Dark" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:clipToPadding="false"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp200"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/image_01"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView4"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView4">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="@dimen/dp125"
+                        android:layout_height="@dimen/dp190"
+                        android:layout_marginLeft="@dimen/dp16"
+                        android:layout_marginTop="@dimen/dp8"
+                        app:cardBackgroundColor="@color/white"
+                        app:cardCornerRadius="@dimen/dp8">
+
+                        <ImageView
+                            android:id="@+id/img_thumball"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/how_to_win_friend" />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/dp8"
+                        android:gravity="bottom"
+                        android:layout_gravity="bottom"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_title"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="How to Win Friends and Influence People - Đắc nhân tâm"
+                            android:textColor="@color/red_title"
+                            android:textSize="@dimen/dp17"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tv_author"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Author: Dale Carnegie"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/dp15"
+                            android:textStyle="normal" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="4"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:id="@+id/tv_status"
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Status: Online"
+                                android:textColor="@color/white" />
+
+                            <ImageView
+                                android:id="@+id/ig_status"
+                                android:layout_weight="3"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/ic_onlinr"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/tv_amount"
+                                android:gravity="center"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="Amount: 100"
+                                android:textColor="@color/white" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginHorizontal="@dimen/dp16"
+                android:layout_height="wrap_content"
+                android:gravity="start|center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/ln_rent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/dp17"
+                        android:layout_marginTop="@dimen/dp8"
+                        android:textStyle="normal"
+                        android:textColor="@android:color/holo_orange_dark"
+                        android:text="Do you want to rent this book ?"/>
+                    <LinearLayout
+                        android:weightSum="2"
+                        android:layout_marginTop="@dimen/dp16"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="@dimen/dp60"
+                            android:layout_height="@dimen/dp35"
+                            android:padding="@dimen/dp3"
+                            android:layout_weight="1"
+                            android:layout_margin="3dp"
+                            android:layout_gravity="center"
+                            app:cardCornerRadius="@dimen/dp4"
+                            app:cardBackgroundColor="@android:color/holo_green_light">
+
+                            <Button
+                                android:id="@+id/bt_edit"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Edit"
+                                android:background="@android:color/holo_green_light"
+                                android:clickable="true"
+                                android:textAllCaps="false"
+                                android:textSize="@dimen/dp13" />
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="@dimen/dp60"
+                            android:layout_height="@dimen/dp35"
+                            android:padding="@dimen/dp3"
+                            android:layout_weight="1"
+                            android:layout_margin="3dp"
+                            android:layout_gravity="center"
+                            app:cardCornerRadius="@dimen/dp4"
+                            app:cardBackgroundColor="@android:color/holo_green_light">
+
+                            <Button
+                                android:id="@+id/bt_read"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Delete"
+                                android:background="@android:color/holo_green_light"
+                                android:clickable="true"
+                                android:textAllCaps="false"
+                                android:textSize="@dimen/dp13" />
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_des"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/book"
+                android:textColor="@color/white"
+                android:textStyle="normal"
+                android:textSize="@dimen/dp16"
+                android:layout_marginHorizontal="@dimen/dp16"
+                android:layout_marginTop="@dimen/dp16"/>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
